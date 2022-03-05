@@ -19,7 +19,7 @@ Details about the resource, such as datasets and source code, are available at (
 ############################################################################################################  
 # Training  
  ## For SoGouCA(SGSynSetTra)  
- ### Setting the [ini_parameters.ini] as follows:   
+ ### Setting the [ini_parameters.ini] as follows:     
  [ini_parameters_mode] 
  ##mode of the project: train,eval_opt, and test  
  mode = train  
