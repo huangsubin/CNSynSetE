@@ -22,6 +22,8 @@ Details about the resource, such as datasets and source code, are available at (
  [ini_parameters_mode]  
  ##mode of the project: train,eval_opt, and test  
  mode = train  
+ 
+   
  [ini_parameters_train]  
  ##train on RTX6000 with GPU-RAM=24GB  
  ##dataset: training the model for BaiDu or SoGouCA respectively   
@@ -47,7 +49,10 @@ Details about the resource, such as datasets and source code, are available at (
 ## For BaiDu(BDSynSetTra)  
 ### Setting the [ini_parameters.ini] as follows:  
 [ini_parameters_mode]   
-##mode of the project: train; eval_opt; test mode = train
+##mode of the project: train, eval_opt, and test  
+mode = train  
+  
+    
 [ini_parameters_train]  
 ##train on RTX6000 with GPU-RAM=24GB  
 ##dataset: training the model for BaiDu or SoGouCA respectively   
@@ -78,6 +83,7 @@ lamb=0.5
 [ini_parameters_mode]  
 ##mode of the project: train, eval_opt, and test  
 mode = eval_opt  
+  
 [ini_parameters_evaluation_opt]  
 ##Using the PSO to optimal the best evaluation parameters for the project  
 ##The evaluation parameter results are saved in runs->evaluation_log_BaiDu  or runs->evaluation_log_SoGouCA  
@@ -103,17 +109,19 @@ kappa=[0.1,0.9]
   
 ##lamb: the lp and up limit of the lamb  
 lamb=[0.1,0.9]  
+  
 ### Runing the script main.py  
+  
 ## For BaiDu(BDSynSetTra)  
 ### Setting the [ini_parameters.ini] as follows:  
 [ini_parameters_mode]  
 ##mode of the project: train, eval_opt, and test  
 mode = eval_opt  
+  
 [ini_parameters_evaluation_opt]  
 ##Using the PSO to optimal the best evaluation parameters for the project  
 ##The evaluation parameter results are saved in runs->evaluation_log_BaiDu  or runs->evaluation_log_SoGouCA  
-  
-  
+    
 ######################################################################################  
 ##following is the ini_parameters_evaluation_opt for BaiDu  
   
@@ -145,10 +153,10 @@ lamb=[0.1,0.9]
 [ini_parameters_mode]  
 ##mode of the project: train, eval_opt, and test  
 mode = test  
+  
 [ini_parameters_test]  
 ##Predicting the project using the best parameters or other parameters  
 ##The prediction results are saved in runs->testing_log_BaiDu  or runs->testing_log_SoGouCA  
-  
 ######################################################################################  
 ##following is the ini_parameters_test for SoGouCA  
   
