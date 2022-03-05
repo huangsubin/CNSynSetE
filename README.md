@@ -212,12 +212,12 @@ lamb=[0.2]
   
 If the above datasets and source code are useful for your research, please cite the following paper in your publication:  
   
-@article{Huang2022CNSynSetE,
- title={A Bilateral Context and Filtering Strategy based Approach for Chinese Entity Synonym Set Expansion},
- author={Subin Huang et al.},
- journal={****},
- volume={****},
- pages={****},
- year={****},
- publisher={****}
+@article{Huang2022CNSynSetE,  
+ title={A Bilateral Context and Filtering Strategy based Approach for Chinese Entity Synonym Set Expansion},  
+ author={Subin Huang et al.},  
+ journal={****},  
+ volume={****},  
+ pages={****},  
+ year={****},  
+ publisher={****}  
  }
