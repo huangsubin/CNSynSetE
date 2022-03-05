@@ -1,12 +1,11 @@
 # CNSynSetE
 Paper title: A Bilateral Context and Filtering Strategy based Approach for Chinese Entity Synonym Set Expansion  
-############################################################################################################
-# Introduce  
+######################################################################################  
 This resource includes datasets, source code (training,evaluation, and prediction) for the paper: [A Bilateral Context and Filtering Strategy-based Approach for Chinese Entity Synonym Set Expansion].  
   
 Details about the resource, such as datasets and source code, are available at (http://cslab.ahpu.edu.cn/CNSynSetExpan/).  
 
-############################################################################################################  
+######################################################################################  
 # Dependencies  
  Python 3 with NumPy  
  gensim  
@@ -16,7 +15,7 @@ Details about the resource, such as datasets and source code, are available at (
  tqdm  
  tensorboardX  
  networkx  
-############################################################################################################  
+######################################################################################  
 # Training  
  ## For SoGouCA(SGSynSetTra)  
  ### Setting the [ini_parameters.ini] as follows:     
@@ -28,7 +27,7 @@ Details about the resource, such as datasets and source code, are available at (
  ##dataset: training the model for BaiDu or SoGouCA respectively   
  ##The trained models are saved in runs->snapshots_trianed_best->SoGouCA  or runs->snapshots_trianed_best->Baidu  
  ##The trained results are saved in runs->training_log_mu0.0_SoGouCA  or runs->training_log_mu0.0_BaiDu  
- #############################################################  
+######################################################################################  
 
  ##following is the ini_parameters_train for  SoGouCA  
  dataset=SoGouCA  
@@ -54,7 +53,7 @@ Details about the resource, such as datasets and source code, are available at (
 ##dataset: training the model for BaiDu or SoGouCA respectively   
 ##The trained models are saved in runs->snapshots_trianed_best->SoGouCA  or runs->snapshots_trianed_best->Baidu  
 ##The trained results are saved in runs->training_log_mu0.0_SoGouCA  or runs->training_log_mu0.0_BaiDu  
-#############################################################  
+######################################################################################  
 
 ##following is the ini_parameters_train for  BaiDu  
 dataset=BaiDu  
@@ -71,7 +70,8 @@ kappa=0.6
 ##lamb:default=0.5 other values will evaluate in the eval_opt step   
 lamb=0.5  
 ### Runing the script main.py  
-############################################################################################################  
+######################################################################################  
+  
 # Evaluation  
 ## For SoGouCA(SGSynSetTra)    
 ### Setting the [ini_parameters.ini] as follows:  
@@ -82,7 +82,7 @@ mode = eval_opt
 ##Using the PSO to optimal the best evaluation parameters for the project  
 ##The evaluation parameter results are saved in runs->evaluation_log_BaiDu  or runs->evaluation_log_SoGouCA  
 
-#############################################################  
+######################################################################################  
 ##following is the ini_parameters_evaluation_opt for SoGouCA  
   
 ###mutil_processNum, type=int; the number of the parallel processes.  1 denotes no parallel computing,  beger than 1 denotes parallel computing  
@@ -114,7 +114,7 @@ mode = eval_opt
 ##The evaluation parameter results are saved in runs->evaluation_log_BaiDu  or runs->evaluation_log_SoGouCA  
   
   
-#############################################################  
+######################################################################################  
 ##following is the ini_parameters_evaluation_opt for BaiDu  
   
 ###mutil_processNum, type=int; the number of the parallel processes.  1 denotes no parallel computing,  beger than 1 denotes parallel computing  
@@ -137,7 +137,8 @@ kappa=[0.1,0.9]
 lamb=[0.1,0.9]  
 
 ### Runing the script main.py  
-############################################################################################################  
+######################################################################################  
+  
 # Prediction  
 ## For SoGouCA(SGSynSetTra)  
 ### Setting the [ini_parameters.ini] as follows:  
@@ -148,7 +149,7 @@ mode = test
 ##Predicting the project using the best parameters or other parameters  
 ##The prediction results are saved in runs->testing_log_BaiDu  or runs->testing_log_SoGouCA  
   
-#############################################################  
+######################################################################################  
 ##following is the ini_parameters_test for SoGouCA  
   
 ##dataset: Predicting the model for BaiDu or SoGouCA respectively  
@@ -178,7 +179,7 @@ mode = test
 ##Predicting the project using the best parameters or other parameters  
 ##The prediction results are saved in runs->testing_log_BaiDu  or runs->testing_log_SoGouCA  
   
-#############################################################
+######################################################################################  
 ##following is the ini_parameters_test for BaiDu  
 
 ##dataset: Predicting the model for BaiDu or SoGouCA respectively  
