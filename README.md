@@ -20,13 +20,12 @@ Details about the resource, such as datasets and source code, are available at (
 # Training  
  ## For SoGouCA(SGSynSetTra)  
  ### Setting the [ini_parameters.ini] as follows:     
- [ini_parameters_mode] 
+ [ini_parameters_mode]  
  ##mode of the project: train,eval_opt, and test  
  mode = train  
  [ini_parameters_train]  
  ##train on RTX6000 with GPU-RAM=24GB  
- ##dataset: training the model for BaiDu or SoGouCA respectively,  
- ##BaiDu(BDSynSetTra) dataset is more bigger than SoGouCA(SGSynSetTra),so that the model is more time-consuming in training BaiDu(BDSynSetTra) dataset.  
+ ##dataset: training the model for BaiDu or SoGouCA respectively   
  ##The trained models are saved in runs->snapshots_trianed_best->SoGouCA  or runs->snapshots_trianed_best->Baidu  
  ##The trained results are saved in runs->training_log_mu0.0_SoGouCA  or runs->training_log_mu0.0_BaiDu  
  #############################################################  
@@ -52,15 +51,14 @@ Details about the resource, such as datasets and source code, are available at (
 ##mode of the project: train; eval_opt; test mode = train
 [ini_parameters_train]  
 ##train on RTX6000 with GPU-RAM=24GB  
-##dataset: training the model for BaiDu or SoGouCA respectively  
-##BaiDu(BDSynSetTra) dataset is more bigger than SoGouCA(SGSynSetTra),so that the model is more time-consuming in training BaiDu(BDSynSetTra) dataset  
+##dataset: training the model for BaiDu or SoGouCA respectively   
 ##The trained models are saved in runs->snapshots_trianed_best->SoGouCA  or runs->snapshots_trianed_best->Baidu  
 ##The trained results are saved in runs->training_log_mu0.0_SoGouCA  or runs->training_log_mu0.0_BaiDu  
 #############################################################  
 
 ##following is the ini_parameters_train for  BaiDu  
 dataset=BaiDu  
-##BaiDu(BDSynSetTra) dataset is more bigger than SoGouCA(SGSynSetTra),so that the model is more time-consuming in training BaiDu(BDSynSetTra) dataset  
+  
 ##mu:  using 0.0-0.9 to train the model respectively  
 mu=[0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]  
   
