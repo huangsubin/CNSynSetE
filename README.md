@@ -215,8 +215,7 @@ If our paper and the above datasets and source code are useful for your research
 @article{Huang2022CNSynSetE,  
  title={A Bilateral Context and Filtering Strategy based Approach to Chinese Entity Synonym Set Expansion},  
  author={Subin Huang and Yu Xiu and Jun Li and Sanmin Liu and Chao Kong},  
- journal={Complex & Intelligent Systems},  
- volume={*},  
- pages={*},  
- year={2023 accept} 
+ journal={Complex & Intelligent Systems},   
+ year={2023},
+ dio = {https://doi.org/10.1007/s40747-023-01064-w}
  }
